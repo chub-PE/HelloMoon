@@ -4,9 +4,13 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends Activity
 {
+	private AntonidasPlayer _antonidasPlayer = new AntonidasPlayer();
+	private Button _startButton, _stopButton;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -14,6 +18,23 @@ public class MainActivity extends Activity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.fragment_hello_moon);
 
+		_startButton = (Button) findViewById(R.id.startButtonMainActivity);
+		_startButton.setOnClickListener(new View.OnClickListener()
+		{
+			public void onClick(View v)
+			{
+				_antonidasPlayer.play(MainActivity.this);
+			}
+		});
+
+		_stopButton = (Button) findViewById(R.id.stopButtonMainActivity);
+		_stopButton.setOnClickListener(new View.OnClickListener()
+		{
+			public void onClick(View v)
+			{
+				_antonidasPlayer.stop();
+			}
+		});
 	}
 
 	@Override

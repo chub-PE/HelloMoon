@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">I\'m usually nice</string>
+    <string name="action_settings">Settings</string>
+    <string name="hellomoon_play">Play</string>
+    <string name="hellomoon_stop">Stop</string>
+    <string name="hellomoon_description">Archmage Antonidas stepping onto the board</string>
+</resources>

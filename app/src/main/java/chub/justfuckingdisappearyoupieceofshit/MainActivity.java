@@ -16,7 +16,7 @@ public class MainActivity extends Activity
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.fragment_hello_moon);
+		setContentView(R.layout.activity_hello_moon);
 
 		_startButton = (Button) findViewById(R.id.startButtonMainActivity);
 		_startButton.setOnClickListener(new View.OnClickListener()

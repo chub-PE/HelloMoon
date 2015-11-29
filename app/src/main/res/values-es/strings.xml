@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Normalmente soy agradable</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="hellomoon_play">Tocar</string>
+    <string name="hellomoon_stop">Detener</string>
+    <string name="hellomoon_description">Archimago Antonidas pisar el tablero</string>
+</resources>
